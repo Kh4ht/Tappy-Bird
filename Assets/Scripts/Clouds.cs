@@ -41,10 +41,10 @@ public class Clouds : MonoBehaviour
 
         float change = 0;
 
-        if (FindObjectOfType<Obstacle>() != null)
+        if (FindAnyObjectByType<Obstacle>() != null)
         {
-            change = (FindObjectOfType<Obstacle>().Speed - FindObjectOfType<Obstacle>().OriginalSpeed)
-                                    / (FindObjectOfType<Obstacle>().MaxSpeed - FindObjectOfType<Obstacle>().OriginalSpeed);
+            change = (FindAnyObjectByType<Obstacle>().Speed - FindAnyObjectByType<Obstacle>().OriginalSpeed)
+                                    / (FindAnyObjectByType<Obstacle>().MaxSpeed - FindAnyObjectByType<Obstacle>().OriginalSpeed);
         }
 
         Multiplier = Mathf.Lerp(1f, 2f, change);

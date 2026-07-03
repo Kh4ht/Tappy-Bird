@@ -66,5 +66,8 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Tappy Bird.slnx"
+    "dotnet.defaultSolution": "Tappy Bird.slnx",
+    "cSpell.words": [
+        "Tappy"
+    ]
 }
